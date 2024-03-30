@@ -1,0 +1,125 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - always_declare_return_types: true
+    - cancel_subscriptions: true
+    - non_constant_identifier_names: true
+    - avoid_relative_lib_imports: true
+    - avoid_empty_else: true
+    - avoid_print: true  # Uncomment to disable the `avoid_print` rule
+    - avoid_shadowing_type_parameters: true
+    - always_specify_types: true
+    - avoid_field_initializers_in_const_classes: true
+    - avoid_function_literals_in_foreach_calls: false
+  # The lint rules applied to this project can be customized in the
+  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+  # included above or to enable additional rules. A list of all available lints
+  # and their documentation is published at https://dart.dev/lints.
+  #
+  # Instead of disabling a lint rule for the entire project in the
+  # section below, it can also be suppressed for a single line of code
+  # or a specific dart file by using the `// ignore: name_of_lint` and
+  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+  # producing the lint.
+
+
+  # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+
+analyzer:
+  exclude:
+    - lib/models/logger/log_types #todo: fix logs to be immutable
+    - build/**
+    - lib/integration_test/**
+    - integration_test/**
+    - '**.freezed.dart'
+    - '**.g.dart'
+  language:
+    strict-casts: false #should be true
+    strict-raw-types: true
+  errors:
+    empty_catches: ignore # change this
+    overridden_fields: ignore
+    invalid_annotation_target: ignore
+    depend_on_referenced_packages: ignore
+    use_key_in_widget_constructors: error
+    no_leading_underscores_for_local_identifiers: error
+    prefer_is_empty: error
+    unused_import: error
+    unnecessary_const: error
+    unnecessary_null_comparison: error
+    prefer_const_declarations: error
+    prefer_generic_function_type_aliases: error
+    prefer_initializing_formals: error
+    unnecessary_import: error
+    unused_catch_clause: error
+    avoid_init_to_null: error
+    prefer_collection_literals: error
+    prefer_const_constructors: error
+    deprecated_member_use: error
+    curly_braces_in_flow_control_structures: error
+    prefer_const_literals_to_create_immutables: error
+    invalid_null_aware_operator: error
+    prefer_interpolation_to_compose_strings: error
+    sized_box_for_whitespace: error
+    sort_child_properties_last: error
+    avoid_unnecessary_containers: error
+    prefer_function_declarations_over_variables: error
+    avoid_types_as_parameter_names: error
+    avoid_print: error
+    library_prefixes: error
+    prefer_const_constructors_in_immutables: error
+    unused_field: error
+    unnecessary_this: error
+    invalid_assignment: error
+    missing_return: error
+    dead_code: error
+    always_declare_return_types: error
+    annotate_overrides: error
+    avoid_null_checks_in_equality_operators: error
+    library_names: error
+    prefer_final_fields: error
+    prefer_for_elements_to_map_fromIterable: error
+    prefer_if_null_operators: error
+    prefer_is_not_operator: error
+    prefer_null_aware_operators: error
+    recursive_getters: error
+    unnecessary_brace_in_string_interps: error
+    unnecessary_new: error
+    unnecessary_late: error
+    unnecessary_null_in_if_null_operators: error
+    unnecessary_nullable_for_final_variable_declarations: error
+    unnecessary_string_interpolations: error
+    use_rethrow_when_possible: error
+    use_function_type_syntax_for_parameters: error
+    unnecessary_string_escapes: error
+    unnecessary_null_aware_assignments: error
+    unnecessary_getters_setters: error
+    unnecessary_constructor_name: error
+    type_init_formals: error
+    prefer_void_to_null: error
+    prefer_inlined_adds: error
+    exhaustive_cases: error
+    empty_statements: error
+    empty_constructor_bodies: error
+    avoid_single_cascade_in_expression_statements: error
+    avoid_returning_null_for_void: error
+    avoid_renaming_method_parameters: error
+    always_specify_types: error
+    avoid_catches_without_on_clauses: error
+    avoid_function_literals_in_foreach_calls: ignore
+    library_private_types_in_public_api: ignore
+    constant_identifier_names: ignore
+    non_constant_identifier_names: error
+    body_might_complete_normally_nullable: error
+    unrelated_type_equality_checks: error
+    strict_raw_type: error
+    unnecessary_cast: error
+    prefer_typing_uninitialized_variables: error
+    use_build_context_synchronously: error
+    unused_local_variable: error
+    implementation_imports: ignore #due to import src in chats
+    use_super_parameters: error
